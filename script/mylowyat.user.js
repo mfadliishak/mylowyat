@@ -1,7 +1,7 @@
 // ==UserScript==
 // @author         sk3dsu(Fadli Ishak)
 // @name           MyLowyat
-// @version        0.1
+// @version        0.2
 // @description    Removing some elements of the forum to be a bit cleaner for SFW.
 // @namespace      https://github.com/mfadliishak/lowyatAvatars
 // @icon           https://forum.lowyat.net/favicon.ico
