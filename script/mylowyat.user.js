@@ -19,3 +19,13 @@ for (i = 0; i < avatars.length; i++)
     var item = avatars[i];
     item.style = "display:none;";
 }
+
+/**
+ * 2. Remove that big banner up there.
+ *
+ */
+var banner = $('.borderwrap');
+if (banner)
+{
+	banner.style = "display:none;";
+}
