@@ -1,7 +1,7 @@
 // ==UserScript==
 // @author         sk3dsu(Fadli Ishak)
 // @name           MyLowyat
-// @version        0.2.2
+// @version        0.3
 // @description    Removing some elements of the forum to be a bit cleaner for SFW.
 // @namespace      https://github.com/mfadliishak/lowyatAvatars
 // @icon           https://forum.lowyat.net/favicon.ico
@@ -29,4 +29,23 @@ var banner = $('.borderwrap #logostrip');
 if (banner.length)
 {
 	banner.css("display", "none");
+}
+
+/**
+ * 3. Remove that background image ads, only original lowyat's shown.
+ *
+ */
+css = "body { }";
+try {
+    var elmHead, elmStyle;
+    elmHead = document.getElementsByTagName('head')[0];
+    elmStyle = document.createElement('style');
+    elmStyle.type = 'text/css';
+    elmHead.appendChild(elmStyle);
+    elmStyle.innerHTML = css;
+} catch (e) {
+    if (!document.styleSheets.length) {
+        document.createStyleSheet();
+    }
+    document.styleSheets[0].cssText += css;
 }
